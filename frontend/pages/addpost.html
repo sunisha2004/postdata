@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/addpost.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <form action="submit" id="form">
+    <h2>Create a New Post</h2>
+
+    <!-- Image Upload Section -->
+    <div class="upload-section">
+      <p>Add Images</p>
+      <input type="file" id="file-input" onchange="picture()" multiple >
+      <div class="preview-grid" id="preview-grid"></div>
+    </div>
+
+    <!-- Caption -->
+    <div class="caption">
+      <label for="caption">Caption</label>
+      <input type="text" id="caption" maxlength="100" placeholder="Add a caption...">
+      <div class="counter" id="captionCounter">0/100</div>
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+      <label for="description">Description</label>
+      <textarea id="description" maxlength="500" placeholder="Write a description..." rows="4"></textarea>
+      <div class="counter" id="descriptionCounter">0/500</div>
+    </div>
+
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="button cancel">Cancel</button>
+      <button type="submit" class="button post" onclick="postdata()">Post</button>
+    </div>
+  </form>
+  </div>
+
+  <script src="../js/addpost.js"></script>
+</body>
+
+</html>

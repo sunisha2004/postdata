@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">MyWebsite</a>
+        <div class="nav-links">
+            <div id="logbt"><button class="login-btn" onclick="login()">Login</button></div>
+
+            <div class="nav-dropdown" id="user"></div>
+            <div id="profilep" class="profilep">
+                <img src="" alt="" id="profile-pic" class="profile-pic">
+            </div>
+            <div class="dropdown" id="dropdown">
+                <button onclick="myFunction()" class="dropbtn">▼</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a onclick="detail()">Profile</a>
+                    <a onclick="logoutacc()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mainn">
+        <div class="main" id="main">
+
+
+
+        </div>
+    </div>
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

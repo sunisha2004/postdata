@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail Page</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <a onclick="home()" class="home">Home</a>
+            <button id="addpost" class="addpost" onclick="addpost()">Add Post</button>
+        </div>
+
+    </nav>
+    <div>
+        <div class="container" id="container">
+            <!-- Left Side: User Details -->
+             <div class="user-details" id="user-details">
+                <!-- <div class="user-info">
+                    <img src="" alt="User Profile" class="profile-img" id="img">
+                    <h2 class="user-name" id="name"></h2>
+                    <h2 class="email" id="email"></h2>
+                    <h2 id="phone" id="phone"></h2>
+
+                </div> -->
+
+
+            </div>
+
+            <div class="user-posts">
+                <h3>User Posts</h3>
+                <div class="post" id="post">
+                    <!-- <h4>Post Title 1</h4>
+                    <div><img src="#" alt="#"></div> -->
+                </div>
+                
+                <div class="button">
+                    <button onclick="deletedata()">Delete</button>
+                    <button onclick="logoutacc()">LogOut</button>
+                </div>
+            </div> 
+
+        </div>
+
+    </div>
+
+    <script src="../js/detail.js"></script>
+</body>
+
+</html>
